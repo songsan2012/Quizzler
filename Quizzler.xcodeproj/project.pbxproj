@@ -56,15 +56,47 @@
 		E4ED05EF28336549000DBA5C /* Quizzler */ = {
 			isa = PBXGroup;
 			children = (
-				E4ED05F028336549000DBA5C /* AppDelegate.swift */,
+				E4ED06042833F1D0000DBA5C /* Controller */,
+				E4ED06052833F1F1000DBA5C /* Model */,
+				E4ED06062833F222000DBA5C /* View */,
+				E4ED06072833F262000DBA5C /* Supporting Files */,
 				E4ED05F228336549000DBA5C /* SceneDelegate.swift */,
+			);
+			path = Quizzler;
+			sourceTree = "<group>";
+		};
+		E4ED06042833F1D0000DBA5C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E4ED05F028336549000DBA5C /* AppDelegate.swift */,
 				E4ED05F428336549000DBA5C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E4ED06052833F1F1000DBA5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4ED06062833F222000DBA5C /* View */ = {
+			isa = PBXGroup;
+			children = (
 				E4ED05F628336549000DBA5C /* Main.storyboard */,
 				E4ED05F92833654D000DBA5C /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4ED06072833F262000DBA5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				E4ED05FB2833654D000DBA5C /* LaunchScreen.storyboard */,
 				E4ED05FE2833654D000DBA5C /* Info.plist */,
 			);
-			path = Quizzler;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
