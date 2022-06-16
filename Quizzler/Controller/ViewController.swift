@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var currentQuestionIndex: Int = 0
     var currentQuestionCorrect: Bool = false
     var currentScore: Int = 0
+    var questionNumber = 0
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -24,6 +25,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        updateUI()
+        
         let firstQuestion = allQuestions.list[currentQuestionIndex]
         
         questionLabel.text = firstQuestion.questionText
@@ -56,11 +59,24 @@ class ViewController: UIViewController {
       
         if (currentQuestionCorrect)
         {
-            currentScore = currentScore + 1
+            currentScore += 1
         }
         
         // -- Update the score
         scoreLabel.text = "Score: \(currentScore)"
+        
+        // -- Update the progress label and bar
+        if (questionNumber < allQuestions.list.count)
+        {
+            questionNumber += 1
+        }
+        
+        progressLabel.text = "\(questionNumber) / 13"
+        
+        var progressBarWidth = ( view.frame.size.width / CGFloat(allQuestions.list.count) ) * CGFloat(questionNumber)
+        print("ProgressBar width should be \(progressBarWidth)")
+        
+        progressBar.frame.size.width = progressBarWidth
         
     }
     
@@ -69,6 +85,8 @@ class ViewController: UIViewController {
         
         currentQuestionIndex = currentQuestionIndex + 1
         questionLabel.text = allQuestions.list[currentQuestionIndex].questionText
+        
+//        questionNumber += 1
         
     }
     
@@ -141,6 +159,7 @@ class ViewController: UIViewController {
     func startOver() {
        currentQuestionIndex = -1
         currentScore = currentQuestionIndex
+        questionNumber = 0
         
         nextQuestion()
         updateUI()

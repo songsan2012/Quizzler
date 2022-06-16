@@ -65,6 +65,7 @@
 				E4ED06062833F222000DBA5C /* View */,
 				E4ED06072833F262000DBA5C /* Supporting Files */,
 				E4ED05F228336549000DBA5C /* SceneDelegate.swift */,
+				E4ED05FE2833654D000DBA5C /* Info.plist */,
 			);
 			path = Quizzler;
 			sourceTree = "<group>";
