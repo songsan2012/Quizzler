@@ -13,6 +13,8 @@
 		E4ED05F828336549000DBA5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4ED05F628336549000DBA5C /* Main.storyboard */; };
 		E4ED05FA2833654D000DBA5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4ED05F92833654D000DBA5C /* Assets.xcassets */; };
 		E4ED05FD2833654D000DBA5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4ED05FB2833654D000DBA5C /* LaunchScreen.storyboard */; };
+		E4ED06092833F6CD000DBA5C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ED06082833F6CD000DBA5C /* Question.swift */; };
+		E4ED060B283421CC000DBA5C /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ED060A283421CC000DBA5C /* QuestionBank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E4ED05F92833654D000DBA5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4ED05FC2833654D000DBA5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4ED05FE2833654D000DBA5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4ED06082833F6CD000DBA5C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Question.swift; path = "Quizzler/Supporting Files/Question.swift"; sourceTree = SOURCE_ROOT; };
+		E4ED060A283421CC000DBA5C /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		E4ED06052833F1F1000DBA5C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E4ED06082833F6CD000DBA5C /* Question.swift */,
+				E4ED060A283421CC000DBA5C /* QuestionBank.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,7 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4ED05F528336549000DBA5C /* ViewController.swift in Sources */,
+				E4ED06092833F6CD000DBA5C /* Question.swift in Sources */,
 				E4ED05F128336549000DBA5C /* AppDelegate.swift in Sources */,
+				E4ED060B283421CC000DBA5C /* QuestionBank.swift in Sources */,
 				E4ED05F328336549000DBA5C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
