@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E497C898285B0D5C00C29CFB /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E497C897285B0D5C00C29CFB /* ProgressHUD.swift */; };
 		E4ED05F128336549000DBA5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ED05F028336549000DBA5C /* AppDelegate.swift */; };
 		E4ED05F328336549000DBA5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ED05F228336549000DBA5C /* SceneDelegate.swift */; };
 		E4ED05F528336549000DBA5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ED05F428336549000DBA5C /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E497C897285B0D5C00C29CFB /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
 		E4ED05ED28336549000DBA5C /* Quizzler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizzler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4ED05F028336549000DBA5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4ED05F228336549000DBA5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			children = (
 				E4ED05F028336549000DBA5C /* AppDelegate.swift */,
 				E4ED05F428336549000DBA5C /* ViewController.swift */,
+				E497C897285B0D5C00C29CFB /* ProgressHUD.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -101,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				E4ED05FB2833654D000DBA5C /* LaunchScreen.storyboard */,
-				E4ED05FE2833654D000DBA5C /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -179,6 +181,7 @@
 			files = (
 				E4ED05F528336549000DBA5C /* ViewController.swift in Sources */,
 				E4ED06092833F6CD000DBA5C /* Question.swift in Sources */,
+				E497C898285B0D5C00C29CFB /* ProgressHUD.swift in Sources */,
 				E4ED05F128336549000DBA5C /* AppDelegate.swift in Sources */,
 				E4ED060B283421CC000DBA5C /* QuestionBank.swift in Sources */,
 				E4ED05F328336549000DBA5C /* SceneDelegate.swift in Sources */,

@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
     
     //Place your instance variables here
@@ -30,6 +31,8 @@ class ViewController: UIViewController {
         let firstQuestion = allQuestions.list[currentQuestionIndex]
         
         questionLabel.text = firstQuestion.questionText
+        
+        
     }
 
 
@@ -96,11 +99,13 @@ class ViewController: UIViewController {
         if (allQuestions.list[currentQuestionIndex].answer == pickedAnswer)
         {
             print("Got the correct answer!")
+            ProgressHUD.showSuccess("Correct")
             currentQuestionCorrect = true
         }
         else
         {
             print("😡 Sorry you got it wrong!!!")
+            ProgressHUD.showError("Wrong")
             currentQuestionCorrect = false
         }
         
